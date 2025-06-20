@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (if you ever use one)
+env/
+venv/
+
+# VS Code / PyCharm settings
+.vscode/
+.idea/
+
+# macOS / system files
+.DS_Store
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Testing artifacts
+*.log
+coverage/
+htmlcov/
+*.cover
+.cache/
