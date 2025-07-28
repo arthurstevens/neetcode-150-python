@@ -8,7 +8,7 @@ Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice prob
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
-| Arrays & Hashing        | 0         | 9     | 🔄 |
+| Arrays & Hashing        | 1         | 9     | 🔄 |
 | Two Pointers            | 0         | 5     | 🔄 |
 | Sliding Window          | 0         | 6     | 🔄 |
 | Stack                   | 0         | 7     | 🔄 |
@@ -33,3 +33,7 @@ Solution structure:
 - LeetCode problem link
 - Time/space complexity
 - Python solution
+
+## READMEs
+
+Each topic has a journal for tracking adversities and concepts learned.
