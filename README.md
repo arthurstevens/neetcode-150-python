@@ -4,11 +4,11 @@ Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice prob
 
 ## Topics & Progress 
 
-![](https://geps.dev/progress/0)
+![](https://geps.dev/progress/0) **2/150**
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
-| Arrays & Hashing        | 1         | 9     | 🔄 |
+| Arrays & Hashing        | 2         | 9     | 🔄 |
 | Two Pointers            | 0         | 5     | 🔄 |
 | Sliding Window          | 0         | 6     | 🔄 |
 | Stack                   | 0         | 7     | 🔄 |
