@@ -12,9 +12,17 @@
 
 **Key Concept(s):** Hash maps and hash tables
 
-**Notes:** 
+**Notes:**
 - Remember to consider constraints in solutions. I was able to utilise a small array as `s` and `t` contained only lowercase English letters.
 - Simple hash tables have a small performance boost compared to the overhead and dynamic resizing of dictionaries (hash maps).
 - Counter() exists.
 
 ---
+
+## Two Sum
+
+**Key Concept(s):** Hash maps
+
+**Notes:**
+- Begun by initialising the map first, then finding indices, requiring two iterations over `nums`. I was able to optimise by expanding the map with each iteration, as previous numbers alone are sufficient for finding the solution.
+- Minor, but use enumerate() in python to track both value and index on iterables for ease/readability.
