@@ -1,9 +1,9 @@
 # Problem: https://leetcode.com/problems/valid-anagram/
 # NeetCode 150 – Arrays & Hashing
 # Difficulty: Easy
-# Time: O(n + m) simplifying to O(n), Space: O(1)
 
 
+# Time: O(n), Space: O(1)
 class Solution:
     """
     Hash table solution (array of size 26)
@@ -26,6 +26,8 @@ class Solution:
             
         return letters == [0] * 26
 
+
+# Time: O(n), Space: O(1)
 class Solution:
     """
     Hash map solution (dictionary)
