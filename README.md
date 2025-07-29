@@ -4,7 +4,8 @@ Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice prob
 
 ## Topics & Progress 
 
-![](https://geps.dev/progress/0) **2/150**
+**002 / 150**<br>
+![](https://geps.dev/progress/1) 
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
