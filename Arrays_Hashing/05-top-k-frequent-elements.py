@@ -1,10 +1,9 @@
 # Problem: https://leetcode.com/problems/top-k-frequent-elements/
 # NeetCode 150 – Arrays & Hashing
 # Difficulty: Medium
-# Time: O(), Space: O()
+# Time: O(n), Space: O(n)
 
 from typing import List
-from collections import Counter
 
 
 class Solution:
@@ -24,7 +23,7 @@ class Solution:
             if len(top_k) >= k:
                 break
             
-        return top_k
+        return top_k[:k]
             
                 
         
