@@ -24,11 +24,3 @@ class Solution:
                 break
             
         return top_k[:k]
-            
-                
-        
-                
-                
-o = Solution()
-a = o.topKFrequent(nums = [1,1,1,2,2,3], k = 2)
-print(a)
