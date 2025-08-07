@@ -34,7 +34,8 @@ Solution structure:
 - LeetCode problem link
 - Time/space complexity
 - Python solution
-
+ 
 ## READMEs
 
 Each topic has a journal for tracking adversities and concepts learned.
+In addition to this, the `implementations` folders contain algorithms/data structures that were studied and built before approaching problems.
