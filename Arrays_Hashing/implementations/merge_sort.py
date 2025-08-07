@@ -1,4 +1,4 @@
-# Implementation of merge sort
+# Implementation of merge sort (stable)
 # Time complexity: O(n log n)
 # Space complexity: O(n)
 

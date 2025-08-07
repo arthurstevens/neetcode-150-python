@@ -1,4 +1,4 @@
-# Implementation of quick sort
+# Implementation of quick sort (unstable, in-place)
 # Time complexity: O(n log(n)) or O(n^2) if sorted
 # Space complexity: O(log(n))
 
