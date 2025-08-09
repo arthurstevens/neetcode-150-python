@@ -1,6 +1,6 @@
 # Implementation of bucket sort
-# Time complexity: O(n^2) - degraded by quickSort
-# Space complexity: O(n)
+# Time complexity: O(n^2) - degraded by quickSort, O(n + k log(n/k)) ~ O(n) with uniform data
+# Space complexity: O(n + k) - number of buckets and sorted array
 
 from typing import List
 from quick_sort import quickSort
