@@ -1,15 +1,20 @@
 # NeetCode 150 – Python Solutions
 
-Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice problem solving and technical interviews.
+Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice problem solving and DSA.
+
+## READMEs
+
+Each topic has a journal (`README.md`) for tracking adversities and concepts learned.
+In addition to this, the `implementations` folders contain algorithms/data structures that were studied and built before approaching problems.
 
 ## Topics & Progress 
 
-**005 / 150**<br>
-![](https://geps.dev/progress/3) 
+**006 / 150**<br>
+![](https://geps.dev/progress/4) 
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
-| Arrays & Hashing        | 5         | 9     | 🔄 |
+| Arrays & Hashing        | 6         | 9     | 🔄 |
 | Two Pointers            | 0         | 5     | 🔄 |
 | Sliding Window          | 0         | 6     | 🔄 |
 | Stack                   | 0         | 7     | 🔄 |
@@ -35,7 +40,3 @@ Solution structure:
 - Time/space complexity
 - Python solution
  
-## READMEs
-
-Each topic has a journal for tracking adversities and concepts learned.
-In addition to this, the `implementations` folders contain algorithms/data structures that were studied and built before approaching problems.
