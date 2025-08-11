@@ -74,3 +74,20 @@
 - Applied Unicode shift to obfuscate characters on either side of an RLE compression to attempt reducing size for repeated characters.
 - Decode reverses the process.
 - This obfuscation was silly, but for fun!
+
+---
+
+## Product of Array Except Self
+
+**Key Concept(s):** Prefix sum (product)
+
+**Notes:**
+
+- The brute force O(n^2) approach is to iterate over the array, taking the product of all other numbers each time, and then inserting those into the resultant array.
+- A prefix and postfix array can be built to reduce time complexity to O(n), at the expense of additional memory.
+    - The result for any index can then be found by taking `prefix[i-1] * postfix[i+1]` (defaulting to 1 when operating at array edges).
+- To improve this, we can operate directly in the output array. This works on a similar basis as before, an index being equal to `prefix[i-1] * postfix[i+1]`
+    1. Initialise an array of integers of length equalling the input array
+    2. Fill out the array with the prefix products (`prefix[i-1]`)
+    3. Reverse back through the array, multiplying each value by postfix products (`postfix[i+1]`)
+- This optimisation results in O(n) time complexity and O(1) extra space.
