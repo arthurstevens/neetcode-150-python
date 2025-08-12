@@ -9,12 +9,12 @@ In addition to this, the `implementations` folders contain algorithms/data struc
 
 ## Topics & Progress 
 
-**008 / 150**<br>
-![](https://geps.dev/progress/5) 
+**009 / 150**<br>
+![](https://geps.dev/progress/6) 
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
-| Arrays & Hashing        | 8         | 9     | 🔄 |
+| Arrays & Hashing        | 9         | 9     | ✅ |
 | Two Pointers            | 0         | 5     | 🔄 |
 | Sliding Window          | 0         | 6     | 🔄 |
 | Stack                   | 0         | 7     | 🔄 |

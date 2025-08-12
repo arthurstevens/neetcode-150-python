@@ -114,3 +114,28 @@
 - This is optimal as:
     - Avoids any duplicate checks or scans on cells
     - Single pass with constant-time checks is as fast as possible, logically
+
+---
+
+## Longest Consecutive Sequence
+
+**Key Concept(s):** Hash set
+
+**Notes:**
+
+- An initial action was to reduce the array by de-duplicating with a hash set. This eliminates redundant duplicate processing and O(1) lookups, an optimal decision.
+- The first consequent algorithm involved creating a map of sets, for each number:
+    1. Checking for presence of `n +- 1` in the map
+    2. If one exists, add to that set and update the map
+    3. If existing on both sides, merge the sets and update the map
+    4. If neither exist, start a new set in the map
+    5. Finally, return the length of the longest set
+    - This would be expensive with the costly merges and map updates.
+- The optimal approach leverages the O(1) lookups and only initiates counting from the start of a sequence:
+    1. Initialise a `top count` variable
+    2. For each number in the set:
+        - Check if `n` is the start of a sequence by checking for the presence of `n - 1` in the set, skip if it is not
+        - Start a counter, checking for the presence of `n + count` in the set. Coninue incrementing until a value is not found
+        - Update `top count` accordingly
+    3. Return the final state of `top count`
+- This yields O(n) time complexity as each item is only read twice (once when building the set, another when counting) and minimal O(n) space for the constant-time lookups.
