@@ -1,7 +1,7 @@
 # Problem: https://leetcode.com/problems/longest-consecutive-sequence/
 # NeetCode 150 – Arrays & Hashing
 # Difficulty: Medium
-# Time: O(), Space: O()
+# Time: O(n), Space: O(n)
 
 from typing import List
 
