@@ -1,6 +1,6 @@
 ## Contains Duplicate
 
-**Key Concept(s):** Sets
+**Key Concept(s):** Hash set
 
 **Notes:**
 - Sets have a slightly lower overhead than dictionaries as the keys are stored without a value pair.
@@ -10,7 +10,7 @@
 
 ## Valid Anagram
 
-**Key Concept(s):** Hash maps
+**Key Concept(s):** Hash map
 
 **Notes:**
 - Remember to consider constraints in solutions. I was able to utilise a small array as `s` and `t` contained only lowercase English letters.
@@ -21,7 +21,7 @@
 
 ## Two Sum
 
-**Key Concept(s):** Hash maps
+**Key Concept(s):** Hash map
 
 **Notes:**
 - Begun by initialising the map first, then finding indices, requiring two iterations over `nums`. I was able to optimise by expanding the map with each iteration, as previous numbers alone are sufficient for finding the solution.
@@ -31,7 +31,7 @@
 
 ## Group Anagrams
 
-**Key Concept(s):** Hash maps
+**Key Concept(s):** Hash map
 
 **Notes:**
 - The idea of grouping by a common key is central. Using a hash map (dictionary) with that key allows constant-time access to groupings.
@@ -45,7 +45,7 @@
 
 ## Top K Frequent Elements
 
-**Key Concept(s):** Bucket sort, Hash maps
+**Key Concept(s):** Bucket sort, Hash map
 
 **Notes:**
 - The core idea is to bucket elements by frequency, taking advantage of the fact that no element can occur more than n times (where n = len(nums)), making bucket sort viable in O(n) time.
@@ -91,3 +91,26 @@
     2. Fill out the array with the prefix products (`prefix[i-1]`)
     3. Reverse back through the array, multiplying each value by postfix products (`postfix[i+1]`)
 - This optimisation results in O(n) time complexity and O(1) extra space.
+
+---
+
+## Valid Sudoku
+
+**Key Concept(s):** Hash set, Array
+
+**Notes:**
+
+- An optimal solution to this challenge was simple to discover. The nature of unique values per row/column/block is ideal for a hash set.
+    1. Set up an array of sets (according to the grid size, usually 9x9) for each row, column, and block
+    2. Iterate over each cell in the grid
+        - If it is blank, early escape
+        - If it exists in in its respect row, column, or block set, early return `false`
+        - Else insert into respective sets
+    3. Return `true` after each value has been checked
+- The block index I initially used a 1D array, but this was simplified into 1D index:
+    - Row: (row / block size) * block size 
+    - Col: (col / block size)
+    - Hence, block index = (row / block size) * block size + (col / block size)
+- This is optimal as:
+    - Avoids any duplicate checks or scans on cells
+    - Single pass with constant-time checks is as fast as possible, logically
