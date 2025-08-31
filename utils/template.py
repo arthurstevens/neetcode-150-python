@@ -3,6 +3,6 @@
 # Difficulty: Easy/Medium/Hard
 # Time: O(), Space: O()
 
-class Soltuion:
+class Solution:
 	def solution():
 		pass
