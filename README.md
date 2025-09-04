@@ -9,14 +9,14 @@ In addition to this, the `implementations` folders contain algorithms/data struc
 
 ## Topics & Progress 
 
-**009 / 150**<br>
-![](https://geps.dev/progress/6) 
+**015 / 150**<br>
+![](https://geps.dev/progress/10) 
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
 | Arrays & Hashing        | 9         | 9     | ✅ |
-| Two Pointers            | 0         | 5     | 🔄 |
-| Sliding Window          | 0         | 6     | 🔄 |
+| Two Pointers            | 5         | 5     | ✅ |
+| Sliding Window          | 1         | 6     | 🔄 |
 | Stack                   | 0         | 7     | 🔄 |
 | Binary Search           | 0         | 7     | 🔄 |
 | Linked List             | 0         | 11    | 🔄 |
@@ -39,4 +39,3 @@ Solution structure:
 - LeetCode problem link
 - Time/space complexity
 - Python solution
- 
