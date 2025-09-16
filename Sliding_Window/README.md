@@ -52,3 +52,19 @@
             - This can cause the alogirthm to consider some windows as *valid* despite not matching this frequency. This does not break correctness as the maximum valid length was recorder when the window first achieved it, and the window will not incorrectly grow (left pointer will move, so the window slides right until a valid expansion of this window is possible)
 - **Result**:
     - The resultant max length can be computed with `max(current, r - l + 1)`
+
+---
+
+## Permutation in String
+
+**Key Concept(s):** Sliding window
+
+**Notes:**
+- The **general solution** is as follows:
+    - Create a map for the characters in `s1`
+    - Keep a sliding window map of size equal to `s1`, maintaining a map for the current characters in the window
+    - If the maps pass an equality check, return `True`
+- **Optimisations**:
+    - A **fixed sized array** can be maintained as opposed to a hashmap for less overhead (due to constraint of lowercase letters)
+    - Using a **matches counter** as opposed to equality check makes the step O(1) as opposed to O(26) in the case of fixed size arrays
+        - This means that only the most recent character is updated on this counter, reducing the number of comparisons
