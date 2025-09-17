@@ -5,7 +5,7 @@ Progressing through [NeetCode 150](https://neetcode.io/roadmap) to practice prob
 ## READMEs
 
 Each topic has a journal (`README.md`) for tracking adversities and concepts learned.
-In addition to this, the `implementations` folders contain algorithms/data structures that were studied and built before approaching problems.
+In addition to this, the root `Implementations` folder contains algorithms/data structures that were studied and built before approaching problems.
 
 ## Topics & Progress 
 
