@@ -8,18 +8,27 @@ from collections import Counter, defaultdict
 
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-        t_count = Counter(t)
+        if t == "":
+            return ""
         
+        t_count, w_count = Counter(t), defaultdict(int)
+        chrs_have, chrs_need = 0, len(t_count)
+        res, res_len = [-1, -1], float('inf')
         l = 0
-        passed = False
-        res = ""
-        s_count = defaultdict(int)
         for r in range(len(s)):
-            s_count[s[r]] += 1
-            while l < r and s_count[s[l]] > t_count[s[l]]:
-                s_count[s[l]] -= 1
+            c = s[r]
+            w_count[c] += 1
+
+            if c in t_count and w_count[c] == t_count[c]:
+                chrs_have += 1
+
+            while chrs_have == chrs_need:
+                if r - l + 1 < res_len:
+                    res, res_len = [l, r], r - l + 1
+
+                w_count[s[l]] -= 1
+                if s[l] in t_count and w_count[s[l]] + 1 == t_count[s[l]]:
+                    chrs_have -= 1
                 l += 1
-            if (not passed or len(res) > r - l + 1) and (not any(value > s_count[key] for key, value in t_count.items())):
-                res = s[l:r+1]
-                passed = True
-        return res
+        l, r = res
+        return s[l:r+1] if res_len != float('inf') else ""
