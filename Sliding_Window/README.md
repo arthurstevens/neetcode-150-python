@@ -65,6 +65,30 @@
     - Keep a sliding window map of size equal to `s1`, maintaining a map for the current characters in the window
     - If the maps pass an equality check, return `True`
 - **Optimisations**:
-    - A **fixed sized array** can be maintained as opposed to a hashmap for less overhead (due to constraint of lowercase letters)
-    - Using a **matches counter** as opposed to equality check makes the step O(1) as opposed to O(26) in the case of fixed size arrays
+    - A **fixed-sized array** can be maintained as opposed to a hashmap for less overhead (due to constraint of lowercase letters)
+    - Using a **matches counter** as opposed to equality check makes the step O(1) as opposed to O(26) in the case of fixed-size arrays
         - This means that only the most recent character is updated on this counter, reducing the number of comparisons
+
+---
+
+## Minimum Window Substring
+
+**Key Concept(s):** Sliding window
+
+**Notes:**
+- The **general solution** is as follows:
+    - Create a map for the character counts in `t` and a map for the characters in the window
+    - Start a sliding window
+        - Increment `r` at each step, updating the `t` map
+        - While the windows is valid (`t` map is accounted for inside the window)
+            - Update the result if applicalbe
+            - Increment `l` to minimise the window
+- **Optimisations**:
+    - `need` and `have` counters
+        - Comparing the maps for validity is expensive (multiple comparisons). Instead, we can just use a `need` and `have` counter.
+        - `need` is number unique characters in `t`, `have` is the number of those unique characters that is being satisifed in the window.
+        - A window is valid if `need == have`
+    - Only tracking relevant characters
+        - Instead of adding all characters in the window to the map, we can instead only consider those included in `t`
+    - A note on fixed-size arrays
+        - Performs faster, but only when accepting the characters between the uppercase and lowercase alphabet. Conditional checks to remove the wasted character space from the array harms the speed.
