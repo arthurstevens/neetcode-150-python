@@ -9,15 +9,15 @@ In addition to this, the root `Implementations` folder contains algorithms/data 
 
 ## Topics & Progress 
 
-**019 / 150**<br>
-![](https://geps.dev/progress/13) 
+**021 / 150**<br>
+![](https://geps.dev/progress/14) 
 
 | Topic                   | Completed | Total | ✅ |
 |-------------------------|-----------|-------|----|
 | Arrays & Hashing        | 9         | 9     | ✅ |
 | Two Pointers            | 5         | 5     | ✅ |
 | Sliding Window          | 5         | 6     | 🔄 |
-| Stack                   | 0         | 7     | 🔄 |
+| Stack                   | 2         | 7     | 🔄 |
 | Binary Search           | 0         | 7     | 🔄 |
 | Linked List             | 0         | 11    | 🔄 |
 | Trees                   | 0         | 15    | 🔄 |
