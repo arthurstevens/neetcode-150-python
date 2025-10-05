@@ -1,3 +1,5 @@
+# Arrays & Hashing
+
 ## Contains Duplicate
 
 **Key Concept(s):** Hash set

@@ -1,3 +1,5 @@
+# Stack
+
 ## Valid Parantheses
 
 **Key Concept(s):** Stack
